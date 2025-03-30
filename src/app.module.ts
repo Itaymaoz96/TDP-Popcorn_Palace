@@ -8,13 +8,13 @@ import { BookingModule } from './bookings/booking.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST || 'localhost',
+      host: 'localhost',
       port: 5432,
-      username: process.env.DB_USERNAME || 'postgres',
-      password: process.env.DB_PASSWORD || 'postgres',
-      database: process.env.DB_DATABASE || 'popcorn-palace',
+      username: 'popcorn-palace',
+      password: 'popcorn-palace',
+      database: 'popcorn-palace',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: process.env.NODE_ENV !== 'production',
+      synchronize: true,
     }),
     MovieModule,
     ShowtimeModule,
