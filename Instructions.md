@@ -13,8 +13,8 @@ This is a NestJS-based RESTful API for a movie ticket booking system. The system
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd popcorn_palace
+git clone https://github.com/Itaymaoz96/TDP-Popcorn_Palace
+cd TDP-Popcorn_Palace
 ```
 
 ### 2. Install Dependencies
